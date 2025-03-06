@@ -119,16 +119,16 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(576, 69);
+            this.listBox1.Location = new System.Drawing.Point(520, 69);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(212, 225);
+            this.listBox1.Size = new System.Drawing.Size(274, 225);
             this.listBox1.TabIndex = 8;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label3.Location = new System.Drawing.Point(619, 49);
+            this.label3.Location = new System.Drawing.Point(593, 49);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(128, 17);
             this.label3.TabIndex = 9;
@@ -156,6 +156,7 @@
             this.btnReservarVuelo.TabIndex = 12;
             this.btnReservarVuelo.Text = "Reservar";
             this.btnReservarVuelo.UseVisualStyleBackColor = true;
+            this.btnReservarVuelo.Click += new System.EventHandler(this.btnReservarVuelo_Click);
             // 
             // label4
             // 

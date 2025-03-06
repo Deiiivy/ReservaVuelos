@@ -36,7 +36,8 @@ namespace ReservaVuelos
             ActualizarVuelos();
         }
 
-        private void btnReservar_Click(object sender, EventArgs e)
+
+        private void btnReservarVuelo_Click(object sender, EventArgs e)
         {
             string codigo = txtCodigoReserva.Text;
             if (!int.TryParse(txtCantidadReservas.Text, out int cantidadReservar))
