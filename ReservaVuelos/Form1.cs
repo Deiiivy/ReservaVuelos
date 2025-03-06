@@ -15,6 +15,7 @@ namespace ReservaVuelos
         public Form1()
         {
             InitializeComponent();
+            ActualizarVuelos();
         }
 
         private void btnAgregarVuelo_Click(object sender, EventArgs e)
@@ -32,6 +33,7 @@ namespace ReservaVuelos
 
             string resultado = Vuelo.RegistrarVuelo(codigo, origen, destino, fechaSalida, asientos);
            MessageBox.Show(resultado);
+            ActualizarVuelos();
         }
 
         private void btnReservar_Click(object sender, EventArgs e)
@@ -44,6 +46,20 @@ namespace ReservaVuelos
             }
             string resultado = Vuelo.RealizarReserva(codigo, cantidadReservar);
             MessageBox.Show(resultado);
+            ActualizarVuelos();
+        }
+
+        private void ActualizarVuelos()
+        {
+          listBox1.Items.Clear();
+            foreach (var vuelo in Vuelo.ConsultarVuelos())
+            {
+                listBox1.Items.Add(
+                    $"{vuelo.Codigo} - {vuelo.Origen} a {vuelo.Destino} - " +
+                    $"{vuelo.FechaSalida.ToShortDateString()} - Asientos: {vuelo.Asientos}"
+                );
+            }
+
         }
     }
 }
