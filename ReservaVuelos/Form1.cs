@@ -33,5 +33,17 @@ namespace ReservaVuelos
             string resultado = Vuelo.RegistrarVuelo(codigo, origen, destino, fechaSalida, asientos);
            MessageBox.Show(resultado);
         }
+
+        private void btnReservar_Click(object sender, EventArgs e)
+        {
+            string codigo = txtCodigoReserva.Text;
+            if (!int.TryParse(txtCantidadReservas.Text, out int cantidadReservar))
+            {
+                MessageBox.Show("La cantidad de asientos a reservar debe ser un número entero");
+                return;
+            }
+            string resultado = Vuelo.RealizarReserva(codigo, cantidadReservar);
+            MessageBox.Show(resultado);
+        }
     }
 }

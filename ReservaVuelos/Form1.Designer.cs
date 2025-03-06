@@ -38,8 +38,8 @@
             this.btnAgregarVuelo = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtCodigoReserva = new System.Windows.Forms.TextBox();
+            this.txtCantidadReservas = new System.Windows.Forms.TextBox();
             this.btnReservarVuelo = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -121,7 +121,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(576, 69);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(212, 303);
+            this.listBox1.Size = new System.Drawing.Size(212, 225);
             this.listBox1.TabIndex = 8;
             // 
             // label3
@@ -134,19 +134,19 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Vuelos Disponibles";
             // 
-            // textBox5
+            // txtCodigoReserva
             // 
-            this.textBox5.Location = new System.Drawing.Point(367, 81);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 10;
+            this.txtCodigoReserva.Location = new System.Drawing.Point(367, 81);
+            this.txtCodigoReserva.Name = "txtCodigoReserva";
+            this.txtCodigoReserva.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigoReserva.TabIndex = 10;
             // 
-            // textBox6
+            // txtCantidadReservas
             // 
-            this.textBox6.Location = new System.Drawing.Point(367, 137);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 11;
+            this.txtCantidadReservas.Location = new System.Drawing.Point(367, 137);
+            this.txtCantidadReservas.Name = "txtCantidadReservas";
+            this.txtCantidadReservas.Size = new System.Drawing.Size(100, 20);
+            this.txtCantidadReservas.TabIndex = 11;
             // 
             // btnReservarVuelo
             // 
@@ -241,8 +241,8 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnReservarVuelo);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtCantidadReservas);
+            this.Controls.Add(this.txtCodigoReserva);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnAgregarVuelo);
@@ -272,8 +272,8 @@
         private System.Windows.Forms.Button btnAgregarVuelo;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtCodigoReserva;
+        private System.Windows.Forms.TextBox txtCantidadReservas;
         private System.Windows.Forms.Button btnReservarVuelo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
