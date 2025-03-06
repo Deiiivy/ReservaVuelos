@@ -16,5 +16,22 @@ namespace ReservaVuelos
         {
             InitializeComponent();
         }
+
+        private void btnAgregarVuelo_Click(object sender, EventArgs e)
+        {
+            string codigo = txtCodigoVuelo.Text;
+            string origen = txtOrigen.Text;
+            string destino = txtDestino.Text;
+            DateTime fechaSalida = dtpFechaSalida.Value;
+
+            if (!int.TryParse(txtAsientosDisponibles.Text, out int asientos))
+            {
+                MessageBox.Show("El número de asientos debe ser un número entero");
+                return;
+            }
+
+            string resultado = Vuelo.RegistrarVuelo(codigo, origen, destino, fechaSalida, asientos);
+           MessageBox.Show(resultado);
+        }
     }
 }
